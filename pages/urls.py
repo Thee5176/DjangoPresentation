@@ -1,5 +1,7 @@
 from django.urls import path
 
-urlpatterns = [
+from .views import homepage_view
 
+urlpatterns = [
+    path("", homepage_view, name="homepage"),
 ]
